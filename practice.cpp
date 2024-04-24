@@ -6,8 +6,6 @@
 using namespace std;
 
 int get_amount_bigger_inside(int bigger_nums, set<int> &nums_outside, int smaller_number) {
-    // cout << "nums bigger than " << smaller_number << " is " << bigger_nums << endl;
-    // cout << "inside the set (out range) " << distance(nums_outside.lower_bound(smaller_number), nums_outside.end()) << endl;
     return bigger_nums - distance(nums_outside.lower_bound(smaller_number), nums_outside.end());
 }
 
