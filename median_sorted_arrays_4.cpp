@@ -57,7 +57,7 @@ public:
             int v1_left = (mid == 0)? INT_MIN: v1[mid-1];
             int v1_right = (mid == m)?INT_MAX: v1[mid];
             
-            int v2_left = (partition_v2 == 0)?INT_MIN: v2[partition_v2-1];
+            int v2_left = (partition_v2 == 0)? INT_MIN: v2[partition_v2-1];
             int v2_right = (partition_v2 == n)? INT_MAX: v2[partition_v2];
 
             if (v1_left <= v2_right && v2_left <= v1_right) {
